@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="weather-card">
+        <div class="city-input">
+            <input type="text" name="city" id="city" autocomplete="off" placeholder="Enter a city..">
+        </div>
+        <div class="weather-show">
+            <div class="city-name" id="city-name">Vidisha,MP</div>
+            <div class="current-temperature" id="current-temperature">35&deg;C</div>
+            <div class="temperature" id="temperature">35&deg;C (max) / 16&deg;C (min)</div>
+            <div class="weather-name" id="weather-name">Sunny</div>
+            <div class="city-date" id="city-date">
+                Wednesday 5,2021
+            </div>
+            <img src="img/small/sunny.png" alt="" class="img" width="50px" height="50px">
+        </div>
+    </div>
 </body>
 </html>
