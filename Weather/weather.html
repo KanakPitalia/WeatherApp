@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <script type="text/javascript" src="env.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body id="body">
     <div class="weather-card">
         <div class="city-input">
             <input type="text" name="city" id="city" autocomplete="off" placeholder="Enter a city..">
         </div>
-        <div class="weather-show">
+        <div class="weather-show" id="weather-show">
             <div class="city-name" id="city-name">Vidisha,MP</div>
-            <div class="current-temperature" id="current-temperature">35&deg;C</div>
-            <div class="temperature" id="temperature">35&deg;C (max) / 16&deg;C (min)</div>
+            <div class="current-temperature"><span id="current-temperature">35</span>&deg;C</div>
+            <div class="temperature"><span id="max_temp">35</span>&deg;C <span style="font-size:25px;">&#8593;</span> /
+                <span id="min_temp">16</span>&deg;C
+                <span style="font-size:25px;">&#8595;</span>
+            </div>
             <div class="weather-name" id="weather-name">Sunny</div>
             <div class="city-date" id="city-date">
-                Wednesday 5,2021
+                Wednesday 5 Dec,2021
             </div>
-            <img src="img/small/sunny.png" alt="" class="img" width="50px" height="50px">
+
+            <img src="img/small/clear.png" alt="" class="img" width="50px" height="50px" id="img">
         </div>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

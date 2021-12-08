@@ -1,6 +1,4 @@
 *{  
-    /* width:0px;
-    height:0px; */
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -8,7 +6,7 @@
 }
 
 body{
-    background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1) ),url(img/default.jpg),url(img/large/default.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(img/large/default.jpg);
     background-size:cover;
 
     background-repeat: no-repeat;
@@ -26,12 +24,12 @@ body{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    
+    background:rgba(62,74,100,0.8);
     border:2px solid rgb(208, 175, 232);
     border-radius:15px;
     width:fit-content;
     height:fit-content;
-    padding:2px;
+    padding:0px 20px;
 
     
 }
@@ -53,11 +51,23 @@ input[type="text"]
     background:rgba(230,230,250,0);
     text-align:center;
     font-size:large;
+    color:darkred;
     /*height:50px; */
+}
+input[type="text"]::placeholder,.city-name{
+    color:darkred;
+    
+}
+.city-name{
+    font-weight: bold;
 }
 .weather-show div{
     margin:20px;
     text-align: center;
+}
+.temperature,.weather-name,.city-date{
+    color:rgb(24, 12, 130);
+    font-weight: bold;
 }
 .img{
     position:relative;
@@ -66,4 +76,5 @@ input[type="text"]
 .current-temperature{
     font-size: 40px;
     font-weight:bold;
+    text-shadow:2px 2px rgb(98, 133, 197);
 }
